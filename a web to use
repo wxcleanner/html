@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post">
+        name : <input type="text" name="name"> <br><br>
+        password: <input type="password" name="password"> <br><br>
+        gender:
+        <label><input type="radio" name="gender" value="1">man</label>
+        <label><input type="radio" name="gender" value="2">woman</label><br><br>
+        hobby:
+        <label><input type="checkbox" name="hobby" value="java">java</label>
+        <label><input type="checkbox" name="hobby" value="game">game</label>
+        <label><input type="checkbox" name="hobby" value="sing">sing</label><br><br>
+        photo:
+        <input type="file" name="image"><br><br>
+        birthday:
+        <input type="date" name="birthday"><br><br>
+        time:
+        <input type="time" name="time"><br><br>
+        date time:
+        <input type="datetime-local" name="datetime"> <br><br>
+        email:
+        <input type="email" name="email"><br><br>
+        age:
+        <input type="number" name="age"><br><br>
+        degree :
+        <select name="degree">
+            <option value="">-----------please choose your choice</option>
+            <option value="1">大专</option>
+            <option value="2">本科</option>
+            <option value="3">研究生</option>
+            <option value="4">博士</option>
+        </select><br><br>
+        description:
+        <textarea name="description" col="30" row="10"></textarea> <br><br>
+        <input type="hidden" name="id" value="1">
+
+        <input type="button" value="按钮">
+        <input type="reset" value="重置">
+        <input type="submit" value="提交">
+        <br>
+
+    </form>
+</body>
+
+</html>
