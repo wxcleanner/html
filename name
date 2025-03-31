@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="load()">
+    <form action="" style="text-align: center;" onsubmit="subfn()">
+        <input type="text" name="username" onblur="bfn()" onfocus="ffn()" onkeydown="kfn()">
+        <input id="b1" type="submit" value="提交">
+        <input id="b1" type="button" value="单击事件" onclick="fn1()">
+        <br><br><br>
+    </form>
+    <table width="800px" border="1" cellspacing="0" align="center" onmouseover="over()" onmouseout="out()">
+        <tr>
+            <th>学号</th>
+            <th>姓名</th>
+            <th>分数</th>
+            <th>评语</th>
+        </tr>
+        <tr align="center">
+            <td>001</td>
+            <td>张三</td>
+            <td>001</td>
+            <td>优秀</td>
+        </tr>
+        <tr align="center">
+            <td>002</td>
+            <td>李四</td>
+            <td>002</td>
+            <td>优秀</td>
+        </tr>
+    </table>
+</body>
+<script>
+    function load() {
+        console.log("this web have finished");
+    }
+    function fn1() {
+        console.log("i was clicked");
+    }
+    function bfn() {
+        console.log("l have lost this target")
+    }
+    function ffn() {
+        console.log('i have got this target again')
+    }
+    function kfn() {
+        console.log("the keyboard was  pressed")
+    }
+    function out() {
+        console.log("the mouse was entered");
+    }
+    function over() {
+        console.log("the mouse is over")
+    }
+    function subfn() {
+        console.log("the table was submit");
+    }
+</script>
+
+</html>
