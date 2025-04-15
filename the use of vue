@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <div id="app" class="bg-white p-8 rounded shadow-md">
+        <h1 class="text-2xl font-bold text-blue-600">{{message}}</h1>
+        <h1 class="text-2xl font-bold text-green-600">{{count}}</h1>
+    </div>
+
+    <script type="module">
+        import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js';
+
+        createApp({
+            data() {
+                return {
+                    message: 'hello cy',
+                    count: 100
+                }
+            }
+        }).mount('#app');
+    </script>
+</body>
+
+</html>
